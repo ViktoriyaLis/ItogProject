@@ -17,12 +17,14 @@ static string[] sortStrings(string[] array)
     }
     string[] newArray = new string[count];  
     int j = 0; 
-    for (int i = 0; i < array.Length; i++)   
+    for (int i = 0; i < array.Length; i++) 
+    {  
         if (array[i].Length <= 3)  
         {                            
             newArray[j] = array[i];     
             j++;                                      
         }    
+    }
     return newArray;
 }
 
